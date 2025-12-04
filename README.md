@@ -53,3 +53,18 @@ Open users.xml:
 ```bash
 nano users.xml
 ```
+Add this account in user section:
+```bash
+<admin>
+    <password>your-custom-password</password>
+    <networks>
+        <ip>::/0</ip>
+    </networks>
+    <profile>default</profile>
+    <quota>default</quota>
+    <access_management>1</access_management>
+</admin>
+```
+- This is an account with username admin
+- There is an account with username default already in the file
+- It is recommended to set password for default account and its access_management to 0
