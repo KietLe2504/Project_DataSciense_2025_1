@@ -25,3 +25,9 @@ docker run -d --name <container-name> --ulimit nofile=262144:262144 -p 8123:8123
 - container-name: name of your container, e.g. clickhouse-server
 - 8123 and 9000: two ports for access, 9000 for terminal and 8123 for web [http://localhost:8123](http://localhost:8123) and Python
 - clickhouse_data and clickhouse_logs: volumes for data, remain in Docker even if the container is removed
+
+You can use these commands to check if the container is running and the created volumes:
+```bash
+docker ps
+docker volume ls
+```
