@@ -69,3 +69,20 @@ Add this account in user section:
 - There is an account with username default already in the file
 - It is recommended to set password for default account and its access_management to 0
 - Ctrl + O and press Enter to Save, Ctrl + X to exit
+
+## Set up Clickhouse in Python
+Install module clickhouse_connect:
+```bash
+pip install clickhouse_connect
+```
+Open python file and insert the following code:
+```code
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(
+    host=localhost,
+    port=8123,
+    username="admin",
+    password="your-custom-password"
+)
+```
