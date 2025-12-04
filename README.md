@@ -38,3 +38,18 @@ Now run this command to access the clickhouse-server bash:
 ```bash
 docker exec -it clickhouse-server bash
 ```
+You are now in the container.
+
+Run this follwing command to access to etc/clickhouse-server:
+```bash
+cd etc/clickhouse-server
+```
+Update and install these packages:
+```bash
+apt update
+apt install nano
+```
+Open users.xml:
+```bash
+nano users.xml
+```
