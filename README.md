@@ -10,7 +10,6 @@ After installing Docker, turn on it and leave it running.
 
 ## Pull Clickhouse server image into Docker
 On Windows, open Windows PowerShell or Cmd and run this command
-
-```console
+```bash
 docker pull clickhouse/clickhouse-server:latest
 ```
