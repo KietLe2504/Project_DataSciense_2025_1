@@ -76,7 +76,7 @@ Install module clickhouse_connect:
 pip install clickhouse_connect
 ```
 Open python file and insert the following code:
-```code
+```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(
@@ -85,4 +85,23 @@ client = clickhouse_connect.get_client(
     username="admin",
     password="your-custom-password"
 )
+```
+
+## Notation
+Before using Clickhouse on Python, you must start Docker and start clickhouse-server:
+```bash
+docker start clickhouse-server
+```
+Stop clickhouse-server:
+```bash
+docker stop clickhouse-server
+```
+Remove clickhouse-server:
+```bash
+docker rm -f clickhouse-server
+```
+You also need need to delete the volumes:
+```bash
+docker volume rm clickhouse_data
+docker volume rm clickhouse_logs
 ```
