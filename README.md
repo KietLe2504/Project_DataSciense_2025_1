@@ -9,6 +9,7 @@ A major challenge was YouTube Data API quota constraints; to complete the crawl 
 
 ## Folder Structure
 
+<pre>
 Project_DataSciense_2025_1/
 ├─ data/
 │  ├─ Cluster_E5.csv
@@ -23,6 +24,7 @@ Project_DataSciense_2025_1/
 └─ embeddings/
    ├─ channel_embeddings_e5-small.npy
    └─ channel_embeddings_all-MiniLM-L6-v2.npy
+</pre>
 
 ---
 
